@@ -1,4 +1,4 @@
-package br.com.ifpi.ads.ulisses.atividade1;
+package atividade1;
 
 import java.util.Scanner;
 
@@ -14,9 +14,15 @@ public class Questao2 {
 		int n1 = entrada.nextInt();
 		System.out.print("Digite outro numero..: ");
 		int n2 = entrada.nextInt();
-		
-//		System.out.println("O número " + + " eh Maior");
-//		System.out.println("O número " + + " eh Menor");
+		if (n1 > n2) {
+			System.out.println("O número " +n1+ " eh Maior");
+			System.out.println("O número " +n2+ " eh Menor");
+		} else if (n1 < n2){ 
+			System.out.println("O número " +n1+ " eh Menor");
+			System.out.println("O número " +n2+ " eh Maior");
+		} else {
+			System.out.println("Os números digitados são iguais");
+		}
 	}
 }
 

@@ -1,4 +1,4 @@
-package br.com.ifpi.ads.ulisses.atividade1;
+package atividade1;
 
 import java.util.Scanner;
 
