@@ -25,7 +25,7 @@ public class Questao4 {
 		
 		if (media >= 7.0) {
 			System.out.println("Você está Aprovado!");
-		} else if(media == 24) {
+		} else if(media <= 4.0) {
 			System.out.println("Você está na Prova Final!");
 		} else {
 			System.out.println("Você está Reprovado!");
