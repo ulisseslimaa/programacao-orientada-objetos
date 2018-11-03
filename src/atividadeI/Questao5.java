@@ -1,4 +1,4 @@
-package atividade1;
+package atividadeI;
 
 import java.util.Scanner;
 
@@ -6,17 +6,17 @@ import java.util.Scanner;
  * @author ulisses
  *
  */
-
-/** Receba um numero na faixa de 1 a 12 e diga o mês correspondente. Exemplo:
- * 1 = Janeiro, 2 = Fevereiro ...............**/
-
 public class Questao5 {
+	/**
+	 * Receba um numero na faixa de 1 a 12 e diga o mês correspondente. Exemplo: 1 =
+	 * Janeiro, 2 = Fevereiro ...............
+	 */
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		
+
 		System.out.println("Digite um número na faixa de 1 a 12");
 		int num = entrada.nextInt();
-		
+
 		switch (num) {
 		case 1:
 			System.out.println("Janeiro");
