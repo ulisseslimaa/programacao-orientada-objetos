@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Questao2 {
 	/**
 	 * Continue... Modifique o programa anterior para permitir ao usuário digitar os
-	 * números e ao colocar uma consição de parada.
+	 * números e ao colocar uma condição de parada.
 	 */
 	public static void main(String[] args) {
 		double c = 0;

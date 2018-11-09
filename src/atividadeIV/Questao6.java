@@ -9,24 +9,20 @@ public class Questao6 {
 	 * Mostre na tela os 50 primeiros números da série de Fibonacci
 	 */
 	public static void main(String[] args) {
-		int n1 = 1, n2 = 0;
-		System.out.println(n2);
-		System.out.println(n1);
-		for (int i = 0; i < 50; i++) {
-			n1 = n1 + n2;
-			n2 = n1 - n2;
-			System.out.println(n1);
-		}
+		
+		System.out.println("Esses são os 50 primeiros números da sequência de Fibonacci!");
 		System.out.println("---------------------------------------");
-		//outra forma de fazer
-		int a = 1;
-		int b = 0;
-		int aux;
+		// outra forma de fazer
+		long a = 1;
+		long b = 0;
+		long aux;
 		for (int i = 0; i < 50; i++) {
-			System.out.println(a);
+			System.out.print(b + " ");
 			aux = a;
 			a = a + b;
 			b = aux;
 		}
+		System.out.println("Esses são os 50 primeiros números da sequência de Fibonacci!");
+		System.out.println("---------------------------------------");
 	}
 }

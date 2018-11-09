@@ -15,10 +15,10 @@ public class Questao4 {
 		System.out.println("Verificador de números\n");
 		System.out.print("Digite um número: ");
 		int num = new Scanner(System.in).nextInt();
-		System.out.println("\nOs divisores de " + num + " são:");
+		System.out.print("\nOs divisores de " + num + " são: ");
 		for (int i = 1; i <= num; i++) {
 			if (num % i == 0) {
-				System.out.println(i);
+				System.out.print(i+" ");
 			}
 		}
 	}
