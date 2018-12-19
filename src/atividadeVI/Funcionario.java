@@ -12,18 +12,23 @@ public class Funcionario {
 
 	void bonifica(double aumento) {
 		double bonificacao;
-		bonificacao = (this.salario * aumento/100);
-		System.out.println("Novo Salário: " + (this.salario + bonificacao));
+		bonificacao = this.salario * aumento / 100;
+		this.salario = this.salario + bonificacao;
 	}
 
 	void demite() {
-		estadoNaEmpresa = false;
+		this.estadoNaEmpresa = false;
 	}
+
 	void mostrar() {
-		System.out.println(nome);
-		System.out.println(departamento);
-		System.out.println(salario);
-		System.out.println(estadoNaEmpresa);
+		System.out.println("Nome...............: " + nome);
+		System.out.println("Departamento.......: " + departamento);
+		System.out.println("Sálario............: " + salario);
+		if (this.estadoNaEmpresa == true) {
+			System.out.println("Estado na Empresa..: Funcionário Empregado");
+		} else {
+			System.out.println("Estado na Empresa..: Funcionário demitido");
+		}
 	}
 
 	public String getNome() {
@@ -57,5 +62,5 @@ public class Funcionario {
 	public void setEstadoNaEmpresa(boolean estadoNaEmpresa) {
 		this.estadoNaEmpresa = estadoNaEmpresa;
 	}
-	
+
 }

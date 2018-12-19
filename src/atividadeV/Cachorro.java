@@ -10,6 +10,7 @@ public class Cachorro {
 	 Rabo rabo;
 
 	public Cachorro() {
+		
 	}
 
 	void latir() {
