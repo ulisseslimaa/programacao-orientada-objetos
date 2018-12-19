@@ -1,4 +1,4 @@
-#Atividade
+# Atividade
 + Implementar a Classe Funcionário de acordo com seus atributos e operações;
 + O método bonifica() dá um aumento de 10% no salário do funcionário;
 + O método demite altera o estado da variável de instância estadonaEmpresa para false;
