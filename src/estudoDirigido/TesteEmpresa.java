@@ -7,7 +7,7 @@ package estudoDirigido;
 public class TesteEmpresa {
 	public static void main(String[] args) {
 //		Limite de Funcionários na Empresa
-		Empresa virtex = new Empresa(3);
+		Empresa empresaABCD = new Empresa(3);
 
 //		Criando Funcionário
 		Funcionario f1 = new Funcionario("Pedro Henrique");
@@ -54,12 +54,12 @@ public class TesteEmpresa {
 		f4.calculaGanhoAnual();
 
 //		Adicionando Funcionários na Empresa
-		virtex.adicionar(f1);
-		virtex.adicionar(f2);
-		virtex.adicionar(f3);
-//		virtex.adicionar(f4);
+		empresaABCD.adicionar(f1);
+		empresaABCD.adicionar(f2);
+		empresaABCD.adicionar(f3);
+//		empresaABCD.adicionar(f4);
 
 //		Mostrando todos os Funcionários da empresa e seus dados cadastrados!
-		virtex.mostrarEmpregados();
+		empresaABCD.mostrarEmpregados();
 	}
 }
