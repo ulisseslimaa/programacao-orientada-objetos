@@ -1,6 +1,3 @@
-/**
- * 
- */
 package estudoDirigido;
 
 /**
@@ -13,6 +10,7 @@ public class Funcionario {
 	private double salario;
 	private Data dataDeEntrada;
 	private String RG;
+	private double ganhoAnual;
 	private int identificador;
 	private static int contador = 0;
 
@@ -27,30 +25,28 @@ public class Funcionario {
 		this.nome = nome;
 	}
 
-	public int getIdentificador() {
-		return identificador;
-	}
-
 	public void recebeAumento(double valor) {
 		this.salario += valor;
 	}
 
 	public double calculaGanhoAnual() {
-		return this.salario * 12;
+		if (this.salario != 0.0)
+			ganhoAnual = this.salario * 12;
+		return ganhoAnual;
 	}
 
 	public void mostra() {
-		System.out.println("Identifador : " + identificador);
-		System.out.println("Nome: " + nome);
-		System.out.println("Departamento: " + departamento);
-		System.out.println("Salario: " + salario);
+		System.out.println("Identificador...: " + identificador);
+		System.out.println("Nome............: " + nome);
+		System.out.println("RG..............: " + RG);
+		System.out.println("Departamento....: " + departamento);
+		System.out.println("Salario.........: " + salario);
+		System.out.println("Ganho Anual.....: " + calculaGanhoAnual());
 		if (dataDeEntrada != null) {
-			System.out.println(dataDeEntrada.getFormatada());
+			System.out.println(dataDeEntrada.getFormatada() + "\n");
 		} else {
-			System.out.println("Data não informada");
+			System.out.println("Data não informada \n");
 		}
-		System.out.println("RG: " + RG);
-
 	}
 
 	public String getNome() {

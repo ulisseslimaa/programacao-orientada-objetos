@@ -19,7 +19,8 @@ public class Empresa {
 			empregados[posicao] = funcionario;
 			posicao++;
 		} else {
-			System.out.println("Matriz cheia");
+			System.out.println("Esta cheio, tem funcionários demais aqui! \n" + funcionario.getNome()
+					+ " não cadastrado nessa empresa " + "\n");
 		}
 	}
 
@@ -47,13 +48,5 @@ public class Empresa {
 
 	public Funcionario[] getEmpregados() {
 		return empregados;
-	}
-
-	public int getPosicao() {
-		return posicao;
-	}
-
-	public void setPosicao(int posicao) {
-		this.posicao = posicao;
 	}
 }

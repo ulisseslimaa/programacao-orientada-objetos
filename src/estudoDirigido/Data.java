@@ -10,6 +10,6 @@ public class Data {
 	int ano;
 
 	String getFormatada() {
-		return "Data de Entrada: " + dia + "/" + mes + "/" + ano;
+		return "Data de Entrada.: " + dia + "/" + mes + "/" + ano;
 	}
 }
