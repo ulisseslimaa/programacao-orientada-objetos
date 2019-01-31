@@ -57,7 +57,7 @@ public class TesteEmpresa {
 		virtex.adicionar(f1);
 		virtex.adicionar(f2);
 		virtex.adicionar(f3);
-//		virtex.adicionar(f4);
+		virtex.adicionar(f4);
 
 //		Mostrando todos os Funcionários da empresa e seus dados cadastrados!
 		virtex.mostrarEmpregados();
