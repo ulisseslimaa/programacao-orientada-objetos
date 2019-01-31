@@ -24,7 +24,8 @@ public class Conta {
 		this.saldo = saldo - valor;
 		return saldo;
 	}
-    //atualiza o salario, taxa - porcentagem 
+
+	// atualiza o salario, taxa - porcentagem
 	public double atualiza(double taxa) {
 		double porcentagem = saldo * taxa / 100;
 		this.saldo = porcentagem + saldo;

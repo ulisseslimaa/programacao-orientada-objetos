@@ -11,8 +11,12 @@ public class TesteAplicacao {
 		Administrativo adm1 = new Administrativo("João", "123.548.852-40", "20173tprof", 2300, 40);
 		Administrativo adm2 = new Administrativo("Paulo", "174.485.4849-40", "20174tprof", 1000, 60);
 
+		prof1.gratificacao();
+		prof2.gratificacao();
+
 		prof1.mostrar();
 		prof2.mostrar();
+
 		adm1.mostrar();
 		adm2.mostrar();
 

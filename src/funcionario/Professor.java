@@ -16,4 +16,8 @@ public class Professor extends Funcionario {
 		super.mostrar();
 		System.out.println("Regime...............: " + regime + "\n");
 	}
+
+	public void gratificacao() {
+		this.salario = salario * 2;
+	}
 }

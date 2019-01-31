@@ -5,8 +5,8 @@ package funcionario;
  *
  */
 public class Funcionario {
-	String nome;
-	String cpf;
+	protected String nome;
+	protected String cpf;
 	String matricula;
 	double salario;
 
